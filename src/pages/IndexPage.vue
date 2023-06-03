@@ -35,8 +35,57 @@
             </div>
            <span class="ctitle">Health</span>
        </div>
+    </div>
+  </div>
+  <div class="taskList">
+    <h5>You have 5 tasks for today</h5>
+    <div class="tasks">
+     
+          <div class="task">
+            <div class="tInfo"><span class="number">01</span><span class="tTitle"> Daily challeng</span></div> 
+            <div class="tButton">
+              <button class="button1"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="button2"><i class="fa-solid fa-trash-can"></i></button>
+            </div> 
+          </div>
+          <div class="task">
+            <div class="tInfo"><span class="number">01</span><span class="tTitle"> Daily challeng</span></div> 
+            <div class="tButton">
+              <button class="button1"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="button2"><i class="fa-solid fa-trash-can"></i></button>
+            </div> 
+          </div>
+          <div class="task">
+            <div class="tInfo"><span class="number">01</span><span class="tTitle"> Daily challeng</span></div> 
+            <div class="tButton">
+              <button class="button1"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="button2"><i class="fa-solid fa-trash-can"></i></button>
+            </div> 
+          </div>
+          <div class="task">
+            <div class="tInfo"><span class="number">01</span><span class="tTitle"> Daily challeng</span></div> 
+            <div class="tButton">
+              <button class="button1"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="button2"><i class="fa-solid fa-trash-can"></i></button>
+            </div> 
+          </div>
+          <div class="task">
+            <div class="tInfo"><span class="number">01</span><span class="tTitle"> Daily challeng</span></div> 
+            <div class="tButton">
+              <button class="button1"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="button2"><i class="fa-solid fa-trash-can"></i></button>
+            </div> 
+          </div>
+          <div class="task">
+            <div class="tInfo"><span class="number">01</span><span class="tTitle"> Daily challeng</span></div> 
+            <div class="tButton">
+              <button class="button1"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="button2"><i class="fa-solid fa-trash-can"></i></button>
+            </div> 
+          </div>
       
-    
+      
+
     </div>
   </div>
   
@@ -67,7 +116,7 @@ export default defineComponent({
   font-size: 54px;
   color: rgb(197, 200, 243);
 }
-.categories h5{
+h5{
   margin-left: 15px;
   font-size: 15px;
   font-weight: 900;
@@ -120,5 +169,47 @@ export default defineComponent({
   margin-top: 20px;
   font-weight: 700;
   /* border: 2px solid skyblue; */
+}
+.task{
+  /* border: 1px solid rgb(98, 89, 89); */
+  box-shadow: 2px 1px 6px 1px rgb(159, 222, 226);
+  margin: 22px 15px;
+  padding: 12px 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.tInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number{
+  font-size: 18px;
+  font-weight: 900;
+  color: #636693b9;
+}
+.tTitle{
+  font-weight: 900;
+  margin-left: 20px;
+  color: rgb(144, 136, 141);
+}
+.button1{
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: rgb(111, 111, 218);
+  margin-right: 13px;
+  cursor: pointer;
+}
+.button2{
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: rgb(237, 127, 127);
+  margin-right: 10px;
+  cursor: pointer;
 }
 </style>

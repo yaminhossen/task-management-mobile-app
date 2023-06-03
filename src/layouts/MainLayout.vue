@@ -42,6 +42,16 @@
       <div>
       </div>
     </q-page-container>
+    <q-footer>
+      <div class="footers">
+        <div class="footer">
+          <div><i class="fa-solid fa-house"></i></div>
+        <div><i class="fa-solid fa-layer-group"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-gear"></i></div>
+        </div>
+      </div>
+    </q-footer>
   </q-layout>
 </template>
 
@@ -147,5 +157,24 @@ export default defineComponent({
   width: 40px;
   border-radius: 30%;
   margin-right: 20px;
+}
+.footers{
+  background-color: white;
+  /* border-radius: 5px; */
+  /* margin: 0 10px; */
+}
+.footer{
+  background-color: #7e797992;
+  background-image: linear-gradient(to right, #63615c92, #6168d1b7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+ 
+}
+.footer i{
+  font-size: 22px;
+  color: rgb(43, 58, 66);
+  cursor: pointer;
 }
 </style>
