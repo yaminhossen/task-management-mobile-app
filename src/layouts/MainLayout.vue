@@ -134,6 +134,7 @@ export default defineComponent({
   margin-bottom: 5px;
  border: 1px solid rgb(14, 65, 175);
  border-radius: 5px;
+ cursor: pointer;
 }
 .menu i{
   /* font-size: 20px; */
