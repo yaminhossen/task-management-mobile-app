@@ -22,19 +22,50 @@
       show-if-above
       bordered
     >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+      <div>
+        <div>
+          <div class="drawerinfo">
+            <img src="expert-1.jpg" alt="" >
+            <h5>Yamin Hossain</h5>
+            <h6>yamin123@gmail.com</h6>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-moon"></i></span><span class="ftitle">Dark Mode</span></div>
+            <div class="farrow"><i class="fa-solid fa-toggle-off"></i></div>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-comment"></i></span><span class="ftitle">Feedback Us</span></div>
+            <div class="farrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-trash"></i></span><span class="ftitle">Clear All</span></div>
+            <div class="farrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-circle-question"></i></span><span class="ftitle">FAQ</span></div>
+            <div class="farrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-user"></i></span><span class="ftitle">About US</span></div>
+            <div class="farrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-star"></i></span><span class="ftitle">Rate Us</span></div>
+            <div class="farrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="feature">
+            <div> <span class="flogo"><i class="fa-solid fa-globe"></i></span><span class="ftitle">Release Log</span></div>
+            <div class="farrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="lfeature">
+            <div> <span class="llogo"><i class="fa-solid fa-right-from-bracket"></i></span><span class="ltitle">LogOut</span></div>
+            <div class="larrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <q-footer>
+        <div class="dfooter"></div>
+      </q-footer>
     </q-drawer>
 
     <q-page-container>
@@ -48,7 +79,7 @@
           <div><i class="fa-solid fa-house"></i></div>
         <div><i class="fa-solid fa-layer-group"></i></div>
         <div><i class="fa-solid fa-magnifying-glass"></i></div>
-        <div><i class="fa-solid fa-gear"></i></div>
+        <div  @click="toggleLeftDrawer"><i class="fa-solid fa-gear"></i></div>
         </div>
       </div>
     </q-footer>
@@ -177,5 +208,76 @@ export default defineComponent({
   /* color: rgb(43, 58, 66); */
   color: white;
   cursor: pointer;
+}
+.drawerinfo {
+text-align: center;
+margin-top: 60px;
+}
+.drawerinfo img{
+  width: 70px;
+  border-radius: 50%;
+}
+.drawerinfo h5{
+  margin: 0;
+  font-weight: 900;
+  color: rgb(57, 57, 57);
+}
+.drawerinfo h6{
+  margin: 0;
+  color: rgb(89, 87, 87);
+  margin-bottom: 40px;
+}
+.feature{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #262d95ba, #603811ba);
+  box-shadow: 1px 3px 6px 1px rgb(49, 53, 53);
+}
+.flogo{
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(240, 235, 235);
+}
+.ftitle{
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #f5f5f9b7;
+}
+.farrow{
+  font-size: 20px;
+  color: #ffffffb7;
+}
+.lfeature{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px;
+  margin-bottom: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 1px 3px 6px 1px rgb(49, 53, 53);
+}
+.llogo{
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+}
+.ltitle{
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: red;
+}
+.larrow{
+  font-size: 20px;
+  color: red;
+}
+.dfooter{
+  background-image: linear-gradient(to right, #262d95ba, #603811ba);
+  height: 50px;
 }
 </style>
