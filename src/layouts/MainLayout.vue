@@ -174,7 +174,8 @@ export default defineComponent({
 }
 .footer i{
   font-size: 22px;
-  color: rgb(43, 58, 66);
+  /* color: rgb(43, 58, 66); */
+  color: white;
   cursor: pointer;
 }
 </style>
